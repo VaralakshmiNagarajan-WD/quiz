@@ -1,0 +1,44 @@
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: antiquewhite;
+    }
+    .container {
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+      padding: 100px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      background-color: #7532a8;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      border: #7532a8;
+      border-radius: 50px 20px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .hidden {
+      display: none;
+    }
+    .question {
+      margin: 20px 0;
+    }
+    .answers {
+      margin-top: 20px;
+      text-align: left;
+    }
+    .answers h3 {
+      text-align: center;
+    }
+    .answers p {
+      margin: 5px 0;
+    }
+ 

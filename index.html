@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Competition</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Login Page -->
+    <div id="login-page">
+      <h1>Welcome to the Quiz Competition</h1>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <br><br>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <br><br>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Introduction Page -->
+    <div id="intro-page" class="hidden">
+      <h1>Hello, <span id="participant-name"></span>!</h1>
+      <p>Welcome to the Quiz! There are 10 questions, and each question has 4 options.</p>
+      <button onclick="beginQuiz()">Begin Quiz</button>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="hidden">
+      <h1>Quiz</h1>
+      <div class="question">
+        <p id="question-text"></p>
+        <div id="options"></div>
+      </div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Score Page -->
+    <div id="score-page" class="hidden">
+      <h1>Quiz Completed!</h1>
+      <p>Your Score: <span id="score"></span>/10</p>
+      <div class="answers">
+        <h3>Correct Answers</h3>
+        <div id="correct-answers"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
